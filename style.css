@@ -1,0 +1,81 @@
+/* 
+            font-family: 'Inconsolata', monospace;
+            font-family: 'Space Mono', monospace;
+        */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 50px;
+}
+.page-heading h2 {
+  font-family: "Inconsolata", monospace;
+  font-weight: 700;
+  font-size: 24px;
+  color: #333;
+  text-transform: uppercase;
+  line-height: 25px;
+  letter-spacing: -0.08em;
+}
+.page-body {
+  font-family: "Space Mono", monospace;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.page-body .img-body img {
+  width: 450px;
+}
+.page-body .text-body h1 {
+  color: #333;
+  width: 586px;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 75px;
+  letter-spacing: -0.035em;
+}
+.page-body .text-body p {
+  width: 381px;
+  color: #333;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.035em;
+  padding-bottom: 20px;
+}
+
+.btn-dark {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+@media (max-width: 850px) {
+  .page-body {
+    flex-direction: column;
+  }
+  .page-body .img-body img {
+    width: 350px;
+  }
+  .page-body .text-body h1 {
+    font-size: 40px;
+    line-height: 45px;
+    width: 100%;
+  }
+  .page-body .text-body p {
+    width: 100%;
+  }
+
+  /* .btn-dark {
+                background-color: #333;
+                color: #fff;
+                padding: 10px 20px;
+            } */
+}
